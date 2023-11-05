@@ -23,10 +23,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let userDefaultsManager = UserDefaultsManager()
 
         let viewController = JobListViewController()
-        let presenter = JobListPresenter(view: viewController, networkManager: networkManager, imageCacheManager: imageCacheManager, userDefaultsManager: userDefaultsManager)
-
+        let presenter = JobListPresenter(
+            view: viewController,
+            networkManager: networkManager,
+            imageCacheManager: imageCacheManager,
+            userDefaultsManager: userDefaultsManager
+        )
         viewController.presenter = presenter
-
 
         window.rootViewController = UINavigationController(rootViewController: viewController)
         window.makeKeyAndVisible()

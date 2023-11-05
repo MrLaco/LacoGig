@@ -15,7 +15,7 @@ protocol JobListPresenterProtocol {
     func didSaveToUserDefaults(_ jobs: [Models.Job])
 }
 
-class JobListPresenter: JobListPresenterProtocol {
+final class JobListPresenter: JobListPresenterProtocol {
 
     weak var view: JobListView?
 

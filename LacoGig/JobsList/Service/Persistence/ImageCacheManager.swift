@@ -12,7 +12,7 @@ protocol ImageCacheManagerProtocol {
     func image(forKey key: String) -> UIImage?
 }
 
-class ImageCacheManager: ImageCacheManagerProtocol {
+final class ImageCacheManager: ImageCacheManagerProtocol {
     private let cache = NSCache<NSString, UIImage>()
 
     func setImage(_ image: UIImage, forKey key: String) {

@@ -16,7 +16,7 @@ protocol JobListView: AnyObject {
 fileprivate typealias JobDataSource = UICollectionViewDiffableDataSource<Models.Section, Models.Job>
 fileprivate typealias JobDataSourceSnapshot = NSDiffableDataSourceSnapshot<Models.Section, Models.Job>
 
-class JobListViewController: UIViewController {
+final class JobListViewController: UIViewController {
 
     var presenter: JobListPresenterProtocol?
     private lazy var dataSource = makeDataSource()
@@ -84,6 +84,7 @@ class JobListViewController: UIViewController {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Поиск"
+        searchController.searchBar.setValue("Отменить", forKey: "cancelButtonText")
         navigationItem.searchController = searchController
         definesPresentationContext = true
     }

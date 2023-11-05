@@ -18,7 +18,7 @@ protocol NetworkManagerProtocol {
     func fetchImage(from urlString: String, completion: @escaping(UIImage?) -> Void)
 }
 
-class NetworkManager: NetworkManagerProtocol {
+final class NetworkManager: NetworkManagerProtocol {
 
     func fetchJobs(completion: @escaping (Result<[Models.Job], Error>) -> Void) {
         guard let url = URL(string: "http://185.174.137.159/jobs") else {

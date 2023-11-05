@@ -12,7 +12,7 @@ protocol RepositoryProtocol {
     func saveJobs(_ jobs: [Models.Job])
 }
 
-class UserDefaultsManager: RepositoryProtocol {
+final class UserDefaultsManager: RepositoryProtocol {
     func getJobs() -> [Models.Job] {
         if let data = UserDefaults.standard.data(forKey: "allJobs") {
             do {
@@ -29,7 +29,6 @@ class UserDefaultsManager: RepositoryProtocol {
         do {
             let data = try PropertyListEncoder().encode(jobs)
             UserDefaults.standard.set(data, forKey: "allJobs")
-            print(try! PropertyListDecoder().decode([Models.Job].self, from: data))
         } catch {
             print("Failed to save data to UserDefaults")
         }
