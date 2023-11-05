@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "07E61ED1-FBAC-4EBD-BBA2-367EDB386AC9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "179B35A6-9E39-4825-9529-74798CC7FE1F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LacoGig/Presentation/Views/JobListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "343"
+            endingLineNumber = "343"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "179B35A6-9E39-4825-9529-74798CC7FE1F - 64bd1a3fe2e39100"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoGig.JobListViewController.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "LacoGig"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoGig/LacoGig/Presentation/Views/JobListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "352"
+                  endingLineNumber = "352"
+                  offsetFromSymbolStart = "7316">
+               </Location>
+               <Location
+                  uuid = "179B35A6-9E39-4825-9529-74798CC7FE1F - 691eaddd70392bd1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #8 (LacoGig.Models.Job) -&gt; Swift.Bool in LacoGig.JobListViewController.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "LacoGig"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoGig/LacoGig/Presentation/Views/JobListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "352"
+                  endingLineNumber = "352"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "179B35A6-9E39-4825-9529-74798CC7FE1F - 64bd1a3fe2e39100"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoGig.JobListViewController.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "LacoGig"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoGig/LacoGig/Presentation/Views/JobListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "352"
+                  endingLineNumber = "352"
+                  offsetFromSymbolStart = "6616">
+               </Location>
+               <Location
+                  uuid = "179B35A6-9E39-4825-9529-74798CC7FE1F - 64bd1a3fe2e39218"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoGig.JobListViewController.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "LacoGig"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoGig/LacoGig/Presentation/Views/JobListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "344"
+                  endingLineNumber = "344"
+                  offsetFromSymbolStart = "6616">
+               </Location>
+               <Location
+                  uuid = "179B35A6-9E39-4825-9529-74798CC7FE1F - 64bd1a3fe2e39218"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoGig.JobListViewController.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "LacoGig"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoGig/LacoGig/Presentation/Views/JobListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "344"
+                  endingLineNumber = "344"
+                  offsetFromSymbolStart = "6592">
+               </Location>
+               <Location
+                  uuid = "179B35A6-9E39-4825-9529-74798CC7FE1F - 64bd1a3fe2e39218"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoGig.JobListViewController.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "LacoGig"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoGig/LacoGig/Presentation/Views/JobListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "344"
+                  endingLineNumber = "344"
+                  offsetFromSymbolStart = "6660">
+               </Location>
+               <Location
+                  uuid = "179B35A6-9E39-4825-9529-74798CC7FE1F - 64bd1a3fe2e3925e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LacoGig.JobListViewController.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "LacoGig"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danilterletskiy/KFU/ITIS/Swift%20Projects/LacoGig/LacoGig/Presentation/Views/JobListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "346"
+                  endingLineNumber = "346"
+                  offsetFromSymbolStart = "6732">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
