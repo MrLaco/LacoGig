@@ -33,10 +33,10 @@
 
 <h1>Результат:</h1>
 
-<img width="200" alt="image" src="https://github.com/MrLaco/LacoGig/assets/46028944/98194a8e-7e6c-47e3-af09-fbdbc56a5d48">
-<img width="200" alt="image" src="https://github.com/MrLaco/LacoGig/assets/46028944/960b76dc-407f-48f9-a47c-dccd535c7740">
-<img width="200" alt="image" src="https://github.com/MrLaco/LacoGig/assets/46028944/56aaed45-3f48-43ec-9447-7b1efa28d348">
-<img width="200" alt="image" src="https://github.com/MrLaco/LacoGig/assets/46028944/77bf61e5-02c9-4ee5-9936-0fbeefd44e8a">
+<img width="200" alt="image" src="https://github.com/MrLaco/LacoGig/assets/46028944/13f84c82-3418-4cb1-890d-9e8e3ecb989e">
+<img width="200" alt="image" src="https://github.com/MrLaco/LacoGig/assets/46028944/ef03d835-33ca-4c40-8cd3-c4fa72c76124">
+<img width="200" alt="image" src="https://github.com/MrLaco/LacoGig/assets/46028944/7d08f866-144c-457f-add0-c323837bfcd8">
+<img width="200" alt="image" src="https://github.com/MrLaco/LacoGig/assets/46028944/27421553-9892-47ff-af6f-972d0324bdb8">
 
 
 
