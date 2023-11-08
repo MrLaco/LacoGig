@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 enum NetworkingError: Error {
     case invalidURL
@@ -25,59 +26,49 @@ final class NetworkManager: NetworkManagerProtocol {
             completion(.failure(NetworkingError.invalidURL))
             return
         }
-        
-        DispatchQueue.global().async {
-            URLSession.shared.dataTask(with: url) { data, _, error in
-                if let error {
-                    completion(.failure(error))
-                    return
-                }
 
-                guard let data else {
-                    completion(.failure(NetworkingError.fileNotFound(url: url.description)))
-                    return
-                }
+        let JSONDecoder = JSONDecoder()
 
-                do {
-                    var jobs = try JSONDecoder().decode([Models.Job].self, from: data)
-
-                    jobs = jobs.map { job in
-                        var mutableJob = job
-                        mutableJob.isSelected = false
-                        return mutableJob
-                    }
-                    completion(.success(jobs))
-                } catch {
-                    completion(.failure(error))
+        AF.request(url)
+            .validate()
+            .responseDecodable(of: [Models.Job].self, decoder: JSONDecoder) { response in
+                switch response.result {
+                    case .success(var jobs):
+                        jobs = jobs.map { job in
+                            var mutableJob = job
+                            mutableJob.isSelected = false
+                            return mutableJob
+                        }
+                        completion(.success(jobs))
+                    case .failure(let error):
+                        completion(.failure(error))
                 }
-            }.resume()
-        }
+            }
     }
 
-    func fetchImage(from urlString: String, completion: @escaping(UIImage?) -> Void) {
+    func fetchImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
         guard let url = URL(string: urlString) else {
             completion(nil)
             return
         }
 
-        DispatchQueue.global().async {
-            URLSession.shared.dataTask(with: url) { data, _, error in
-                if let error {
-                    print("Failed to load image: \(error)")
-                    completion(nil)
-                    return
+        AF.download(url)
+            .responseData { response in
+                switch response.result {
+                    case .success(let data):
+                        if let image = UIImage(data: data) {
+                            completion(image)
+                        } else {
+                            completion(nil)
+                        }
+                    case .failure(let error):
+                        print("Failed to load image: \(error)")
+                        completion(nil)
                 }
-
-                guard let data, let image = UIImage(data: data) else {
-                    completion(nil)
-                    return
-                }
-
-                completion(image)
-            }.resume()
-        }
+            }
     }
 }
+
 
 // P.S. Когда-нибудь файл с json на сервере умрёт, поэтому оставлю это здесь на будущее, чтоб вспомнить, че к чему =)
 //
